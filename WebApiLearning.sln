@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiLearning", "WebApiLearning\WebApiLearning.csproj", "{CD30411D-90B5-44C3-81F8-609A5C924072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiLearning", "WebApiLearning\WebApiLearning.csproj", "{CD30411D-90B5-44C3-81F8-609A5C924072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{464893EF-1EBB-4E6A-BA05-6738BA3A363B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{464893EF-1EBB-4E6A-BA05-6738BA3A363B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageQueueSender", "MessageQueueSender\MessageQueueSender.csproj", "{CC1AC53D-76BE-48D7-A387-99B708602066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageQueueReceiver", "MessageQueueReceiver\MessageQueueReceiver.csproj", "{65D3A36B-BF4B-434A-8AE1-E41BD4C2585B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{464893EF-1EBB-4E6A-BA05-6738BA3A363B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{464893EF-1EBB-4E6A-BA05-6738BA3A363B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{464893EF-1EBB-4E6A-BA05-6738BA3A363B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC1AC53D-76BE-48D7-A387-99B708602066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC1AC53D-76BE-48D7-A387-99B708602066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC1AC53D-76BE-48D7-A387-99B708602066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC1AC53D-76BE-48D7-A387-99B708602066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65D3A36B-BF4B-434A-8AE1-E41BD4C2585B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D3A36B-BF4B-434A-8AE1-E41BD4C2585B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D3A36B-BF4B-434A-8AE1-E41BD4C2585B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D3A36B-BF4B-434A-8AE1-E41BD4C2585B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
