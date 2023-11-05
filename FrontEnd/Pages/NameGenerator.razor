@@ -1,0 +1,27 @@
+﻿@page "/name"
+@inject IHttpClientFactory ClientFactory
+
+<PageTitle>Get Random Name</PageTitle>
+
+<h4>Click the button below to get a random name</h4>
+<button @onclick="GetRandomName">Get name</button>
+
+<p>@randomName</p>
+
+@code{
+    private string? randomName;
+
+    private async Task GetRandomName()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, "http://host.docker.internal:65158/namegenerator");
+        request.Headers.Add("User-Agent", "ApiTesting");
+
+        var client = ClientFactory.CreateClient();
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            randomName = await response.Content.ReadAsStringAsync();
+        }
+    }
+}
